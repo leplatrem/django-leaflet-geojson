@@ -1,4 +1,4 @@
-Example project of `Geodjango maps with Leaflet <http://blog.mathieu-leplatre.info/blog/output/geodjango-maps-with-leaflet.html>`_
+Example project of `Geodjango maps with Leaflet <http://blog.mathieu-leplatre.info/geodjango-maps-with-leaflet.html>`_
 
 =======
 INSTALL
