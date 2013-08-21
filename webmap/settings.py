@@ -30,3 +30,7 @@ DATABASES = {
         'PORT': '',
     }
 }
+
+SERIALIZATION_MODULES = {
+    'geojson': 'djgeojson.serializers'
+}
