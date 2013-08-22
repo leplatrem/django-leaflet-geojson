@@ -6,6 +6,8 @@ INSTALL
 
 Install project dependencies :
 
+::
+
     virtualenv env
     source env/bin/activate
 
@@ -21,7 +23,7 @@ On Ubuntu, I use these commands to install Spatialite :
 
     sudo apt-get install libgdal-dev libproj-dev libgeos-dev libspatialite-dev spatialite-bin
 
-And it python module *pysqlite* :
+And its python module *pysqlite* :
 
 ::
 
