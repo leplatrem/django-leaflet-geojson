@@ -1,8 +1,8 @@
 {% load leaflet_tags %}
 <html>
   <head>
-    {% leaflet_js %}
-    {% leaflet_css %}
+    {% leaflet_js plugins="ALL" %}
+    {% leaflet_css plugins="ALL" %}
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <style>
         .leaflet-container { height: 100%; }
@@ -14,11 +14,13 @@
 
     <script type="text/javascript">
         function main_map_init (map, options) {
+            map.spin(true);
             var dataurl = '{% url "data" %}';
             // Download GeoJSON via Ajax
             $.getJSON(dataurl, function (data) {
                 // Add GeoJSON layer
                 L.geoJson(data).addTo(map);
+                map.spin(false);
             });
         }
     </script>
