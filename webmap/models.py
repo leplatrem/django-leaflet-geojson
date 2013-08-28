@@ -13,3 +13,15 @@ class WeatherStation(gismodels.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class Region(gismodels.Model):
+
+    name = models.CharField(max_length=256)
+
+    geom = gismodels.PolygonField()
+
+    objects = gismodels.GeoManager()
+
+    def __unicode__(self):
+        return self.name

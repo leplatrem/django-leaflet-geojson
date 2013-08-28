@@ -14,6 +14,8 @@ Install project dependencies :
     python setup.py develop
 
 
+For GIS edition in Adminsite, Django 1.6 is required.
+
 On Ubuntu, I use these commands to install Spatialite :
 
 ::
@@ -32,7 +34,7 @@ And its python module *pysqlite* :
     cd pysqlite-2.6.3
     sed -i "s/define=SQLITE_OMIT_LOAD_EXTENSION//g" setup.cfg
     python setup.py install
-    cd .. 
+    cd ..
 
 
 =========
@@ -57,7 +59,7 @@ Load all weather station instances from GeoJSON :
     python manage.py shell
 
     >>> from django.core.serializers import deserialize
-    >>> 
+    >>>
     >>> source = open('Pub9volA130819x.geojson')
     >>> for ws in deserialize('geojson', source):
     ...     ws.save()
