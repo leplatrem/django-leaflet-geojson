@@ -63,9 +63,9 @@ Load all weather station instances from GeoJSON :
     ...     ws.save()
 
 
-======
-PLAY !
-======
+========
+TUTORIAL
+========
 
 ::
 
@@ -73,3 +73,11 @@ PLAY !
 
 
 Have a look at those 12 000 markers ! (ouch, you hear that ? That's your CPU fan...)
+
+
+Add a spin while layer is loading
+---------------------------------
+
+* `Show me the code ! <https://github.com/leplatrem/django-leaflet-geojson/pull/1/files>`_
+
+
