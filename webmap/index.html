@@ -14,12 +14,10 @@
 
     <script type="text/javascript">
         function main_map_init (map, options) {
-            var dataurl = '{% url "data" %}';
-            // Download GeoJSON via Ajax
-            $.getJSON(dataurl, function (data) {
-                // Add GeoJSON layer
-                L.geoJson(data).addTo(map);
-            });
+            var dataurl = '/data/{z}/{x}/{y}.json';
+
+            var geojsonTileLayer = new L.TileLayer.GeoJSON(dataurl);
+            map.addLayer(geojsonTileLayer);
         }
     </script>
     
