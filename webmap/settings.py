@@ -34,3 +34,12 @@ DATABASES = {
 SERIALIZATION_MODULES = {
     'geojson': 'djgeojson.serializers'
 }
+
+LEAFLET_CONFIG = {
+    'PLUGINS': {
+        'basics': {
+            'js': ['http://rawgithub.com/glenrobertson/leaflet-tilelayer-geojson/master/TileLayer.GeoJSON.js'],
+            'auto-include': True
+        }
+    }
+}
