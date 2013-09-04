@@ -81,3 +81,10 @@ Add a spin while layer is loading
 * `Show me the code ! <https://github.com/leplatrem/django-leaflet-geojson/pull/1/files>`_
 
 
+
+Switch to TileLayer.GeoJSON
+---------------------------
+
+* `Show me the code ! <https://github.com/leplatrem/django-leaflet-geojson/pull/2/files>`_
+
+
