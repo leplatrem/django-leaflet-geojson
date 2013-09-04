@@ -39,7 +39,8 @@ LEAFLET_CONFIG = {
     'PLUGINS': {
         'leaflet.spin': {
             'js': ['http://fgnass.github.io/spin.js/dist/spin.min.js',
-                   'http://makinacorpus.github.io/Leaflet.Spin/leaflet.spin.js']
+                   'http://makinacorpus.github.io/Leaflet.Spin/leaflet.spin.js'],
+            'auto-include': True
         }
     }
 }
