@@ -8,6 +8,7 @@ setup(
         'Django',
         'django-leaflet',
         'django-geojson',
+        'django-geojson-tiles',
     ],
     packages=find_packages(),
     include_package_data=True,
