@@ -18,10 +18,14 @@
             // Download GeoJSON via Ajax
             $.getJSON(dataurl, function (data) {
                 // Add GeoJSON layer
-                L.geoJson(data).addTo(map);
+                L.geoJson(data)
+                 .addTo(map)
+                 .on('click', function (e) {
+                     window.location = '{% url "form" 0 %}'.replace('0', e.layer.feature.id);
+                 });
             });
         }
     </script>
-    
+
   </body>
 </html>

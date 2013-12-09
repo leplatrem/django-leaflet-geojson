@@ -1,0 +1,15 @@
+{% load leaflet_tags %}
+<html>
+  <head>
+   {% leaflet_js plugins="forms" %}
+   {% leaflet_css plugins="forms" %}
+  </head>
+  <body>
+    <h1>Edit {{ object }}</h1>
+    <form method="POST">
+        {{ form }}
+        {% csrf_token %}
+        <input type="submit"/>
+    </form>
+  </body>
+</html>

@@ -5,6 +5,7 @@ from django.contrib import admin
 from djgeojson.views import GeoJSONLayerView
 
 from .models import WeatherStation
+from .views import EditWeatherStation
 
 
 admin.autodiscover()
@@ -13,6 +14,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
     url(r'^data.geojson$', GeoJSONLayerView.as_view(model=WeatherStation), name='data'),
+    url(r'^form/(?P<pk>\d+)$', EditWeatherStation.as_view(), name='form'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
