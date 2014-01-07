@@ -27,7 +27,7 @@ And its python module *pysqlite* :
 
 ::
 
-    wget http://pysqlite.googlecode.com/files/pysqlite-2.6.3.tar.gz
+    wget https://pypi.python.org/packages/source/p/pysqlite/pysqlite-2.6.3.tar.gz
     tar -zxvf pysqlite-2.6.3.tar.gz
     cd pysqlite-2.6.3
     sed -i "s/define=SQLITE_OMIT_LOAD_EXTENSION//g" setup.cfg
